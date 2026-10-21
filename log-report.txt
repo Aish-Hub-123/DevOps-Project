@@ -1,0 +1,45 @@
+
+
+
+DEVOPS FUNDAMENTALS MINI PROJECT
+LOG ANALYSIS REPORT
+
+Server: AWS Ubuntu EC2
+Date: 21 October 2026
+
+1. FAILED LOGIN ATTEMPTS
+Command used:
+sudo journalctl | grep -i "failed password"
+
+Observations:
+Review the logs for failed authentication attempts.
+If no matching entries are found, record that no matching entries were found in the searched logs.
+
+2. SSH LOGIN ACTIVITY
+Command used:
+sudo journalctl -u ssh
+
+Observations:
+Review SSH service logs for successful or unsuccessful login activity.
+Record the relevant timestamps and findings.
+
+3. SYSTEM ERRORS
+Command used:
+sudo journalctl -p err
+
+Observations:
+Review system logs for error-level messages.
+Record the important errors and their possible causes.
+
+4. SYSTEM WARNINGS
+Command used:
+sudo journalctl -p warning
+
+Observations:
+Review warning-level messages and note any recurring issues.
+
+CONCLUSION
+The system logs were reviewed to understand authentication activity,
+SSH events, system errors, and warnings.
+Only verified findings should be included in the final report.
+
