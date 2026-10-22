@@ -1,40 +1,203 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DevOps Fundamentals Mini Project</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background: #f0f4f8;
-            text-align: center;
-            padding: 60px 20px;
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Trebuchet MS', sans-serif;
+            background: linear-gradient(135deg, #101d33, #243b55);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
         }
+
         .container {
-            background: white;
+            background: #ffffff;
+            width: 100%;
             max-width: 650px;
-            margin: auto;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px #0002;
+            padding: 40px;
+            border-radius: 18px;
+            border-top: 6px solid #2196f3;
+            box-shadow: 0 15px 40px #0004;
         }
-        h1 { color: #1769aa; }
-        p { font-size: 18px; line-height: 1.6; }
+
+        .icon {
+            width: 55px;
+            height: 55px;
+            background: #e3f2fd;
+            color: #1565c0;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            color: #0878f9;
+            font-size: 32px;
+            line-height: 1.35;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin: 0 0 16px;
+            text-shadow: 0 2px 12px rgba(33, 150, 243, 0.18);
+            background: linear-gradient(90deg, #0755b5, #00a6ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 85px;
+            height: 4px;
+            margin-top: 14px;
+            border-radius: 5px;
+            background: linear-gradient(90deg, #0755b5, #00a6ff);
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .details {
+            border-top: 1px solid #dce7f3;
+            padding-top: 20px;
+        }
+
+        .detail {
+            background: #f1f6fc;
+            padding: 15px 18px;
+            border-radius: 9px;
+            margin-bottom: 13px;
+            border-left: 3px solid #2196f3;
+        }
+
+        .label {
+            display: block;
+            color: #64748b;
+            font-size: 11px;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+        }
+
+        .value {
+            color: #183b63;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 17px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 1px solid #bbdefb;
+        }
+
+        .status-icon {
+            width: 34px;
+            height: 34px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1565c0;
+            color: white;
+            border-radius: 50%;
+            font-size: 19px;
+        }
+
+        .status strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .status small {
+            color: #31577c;
+            font-size: 12px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            .subtitle {
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
+
+        <div class="icon">&#9729;</div>
+
         <h1>DevOps Fundamentals Mini Project</h1>
-        <p><strong>Student Name:</strong> Aishwarya Mayekar</p>
-        <p><strong>Batch Code:</strong> 530</p>
-        <p><strong>Date:</strong> 18 October 2026</p>
-        <p>Hosted on AWS Ubuntu Server</p>
+
+        <div class="subtitle">
+            CLOUD COMPUTING | LINUX | GITHUB | DEVOPS
+        </div>
+
+        <div class="details">
+
+            <div class="detail">
+                <span class="label">STUDENT NAME</span>
+                <span class="value">Aishwarya Mayekar</span>
+            </div>
+
+            <div class="detail">
+                <span class="label">BATCH CODE</span>
+                <span class="value">AUG26-A530</span>
+            </div>
+
+            <div class="detail">
+                <span class="label">PROJECT DATE</span>
+                <span class="value">24 October 2026</span>
+            </div>
+
+        </div>
+
+        <div class="status">
+            <span class="status-icon">&#10003;</span>
+            <div>
+                <strong>AWS Ubuntu Server</strong>
+                <small>Website hosting environment</small>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
+
+
 
